@@ -1,3 +1,4 @@
+package DesafioDistancias;
 import java.util.Scanner;
 
 public class Desafio01 {
@@ -5,7 +6,8 @@ public class Desafio01 {
 
 		/**
 		 * Usuario informa ponto A(x,y) e B(x,y) Calcular distância Sendo distância =
-		 * raiz de ((Xb - Xa) + (yb - ya))
+		 * raiz de ((bX - aX)² + (bY - aY)²)
+		 * 
 		 **/
 
 		double eixoAx, eixoAy, eixoBx, eixoBy;
@@ -15,13 +17,13 @@ public class Desafio01 {
 		System.out.print("Informe o posição A no eixo x: ");
 		eixoAx = scan.nextDouble();
 
-		System.out.print("Informe o posição A no eixo: ");
+		System.out.print("Informe o posição A no eixo Y: ");
 		eixoAy = scan.nextDouble();
 
-		System.out.print("Informe o posição B no eixo: ");
+		System.out.print("Informe o posição B no eixo X: ");
 		eixoBx = scan.nextDouble();
 
-		System.out.print("Informe o posição B no eixo: ");
+		System.out.print("Informe o posição B no eixo Y: ");
 		eixoBy = scan.nextDouble();
 
 		distancia = Math.sqrt(Math.pow(eixoBx - eixoAx, 2) + Math.pow((eixoBy - eixoAy), 2));
